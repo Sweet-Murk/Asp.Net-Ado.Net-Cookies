@@ -14,7 +14,7 @@ namespace CookieAuthDemo.Models
         [Required]
         public string Gender { get; set; }
         [Required]
-        public string Department { get; set; }
+        public string Work { get; set; }
         [Required]
         public string City { get; set; }
     }

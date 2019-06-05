@@ -30,7 +30,7 @@ namespace CookieAuthDemo.Models
                     employee.ID = Convert.ToInt32(rdr["EmployeeID"]);
                     employee.Name = rdr["Name"].ToString();
                     employee.Gender = rdr["Gender"].ToString();
-                    employee.Department = rdr["Department"].ToString();
+                    employee.Work = rdr["Work"].ToString();
                     employee.City = rdr["City"].ToString();
 
                     lstemployee.Add(employee);
@@ -50,7 +50,7 @@ namespace CookieAuthDemo.Models
 
                 cmd.Parameters.AddWithValue("@Name", employee.Name);
                 cmd.Parameters.AddWithValue("@Gender", employee.Gender);
-                cmd.Parameters.AddWithValue("@Department", employee.Department);
+                cmd.Parameters.AddWithValue("@Work", employee.Work);
                 cmd.Parameters.AddWithValue("@City", employee.City);
 
                 con.Open();
@@ -69,7 +69,7 @@ namespace CookieAuthDemo.Models
                 cmd.Parameters.AddWithValue("@EmpId", employee.ID);
                 cmd.Parameters.AddWithValue("@Name", employee.Name);
                 cmd.Parameters.AddWithValue("@Gender", employee.Gender);
-                cmd.Parameters.AddWithValue("@Department", employee.Department);
+                cmd.Parameters.AddWithValue("@Work", employee.Work);
                 cmd.Parameters.AddWithValue("@City", employee.City);
 
                 con.Open();
@@ -95,7 +95,7 @@ namespace CookieAuthDemo.Models
                     employee.ID = Convert.ToInt32(rdr["EmployeeID"]);
                     employee.Name = rdr["Name"].ToString();
                     employee.Gender = rdr["Gender"].ToString();
-                    employee.Department = rdr["Department"].ToString();
+                    employee.Work = rdr["Work"].ToString();
                     employee.City = rdr["City"].ToString();
                 }
             }
