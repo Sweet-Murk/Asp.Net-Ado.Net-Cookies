@@ -1,5 +1,5 @@
 # MVC Asp.Net Ado.Net Cookies
-Java Spring on Asp.net(MVC, Ado.Net, EF, Cookies for auth) 
+Lab2. Java Spring on Asp.net(MVC, Ado.Net, EF, Cookies for auth) 
 
 How to start:
 1) Add you db
