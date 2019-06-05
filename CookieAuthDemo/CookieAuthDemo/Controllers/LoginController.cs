@@ -70,7 +70,14 @@ namespace CookieAuthDemo.Controllers
                     ClaimsPrincipal principal = new ClaimsPrincipal(userIdentity);
 
                     await HttpContext.SignInAsync(principal);
-                    return RedirectToAction("UserHome", "User");
+                    if(user.UserID=="admin")
+                    {
+                        return RedirectToAction("AdminHome", "Admin");
+                    }
+                    else
+                    {
+                        return RedirectToAction("UserHome", "User");
+                    }
                 }
                 else
                 {
